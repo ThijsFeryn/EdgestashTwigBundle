@@ -1,4 +1,4 @@
-#EdgestashTwig bundle
+# EdgestashTwig bundle
 
 The *EdgestashTwig* bundle is a Symfony bundle that adds *Edgestash* support to Twig.
 
