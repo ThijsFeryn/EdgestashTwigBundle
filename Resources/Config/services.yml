@@ -1,0 +1,4 @@
+services:
+    ThijsFeryn\EdgestashTwigBundle\TwigExtension:
+        arguments:
+            - '@RequestStack'

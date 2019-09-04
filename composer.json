@@ -1,0 +1,21 @@
+{
+  "name": "thijsferyn/edgestash-twig-bundle",
+  "type": "symfony-bundle",
+  "description": "The EdgestashTwig Symfony bundle adds Edgestash support to Twig. Edgestash is a Varnish Enterprise module that processes Mustache templates in the edge.",
+  "keywords": ["caching","varnish","edgestash","twig","symfony","mustache"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Thijs Feryn",
+      "email": "thijs@feryn.eu"
+    }
+  ],
+  "require": {
+    "php": "^7.2",
+    "symfony/twig-bundle": "4.*"
+  },
+  "autoload": {
+    "psr-4": { "ThijsFeryn\\EdgestashTwigBundle\\": "" }
+  },
+  "minimum-stability": "stable"
+}
