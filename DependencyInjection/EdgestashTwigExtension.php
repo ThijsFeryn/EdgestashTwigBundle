@@ -1,6 +1,5 @@
 <?php
-namespace ThijsFeryn\EdgestashTwigBundle\DependencyInjection;
-
+namespace ThijsFeryn\Bundle\EdgestashTwigBundle\DependencyInjection;
 use Symfony\Component\Config\FileLocator;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\DependencyInjection\Extension\Extension;

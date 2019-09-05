@@ -1,5 +1,5 @@
 <?php
-namespace ThijsFeryn\EdgestashTwigBundle;
+namespace ThijsFeryn\Bundle\EdgestashTwigBundle;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
 class EdgestashTwigBundle extends Bundle

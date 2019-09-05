@@ -1,6 +1,5 @@
 <?php
-namespace ThijsFeryn\EdgestashTwigBundle;
-
+namespace ThijsFeryn\Bundle\EdgestashTwigBundle;
 use Symfony\Component\HttpFoundation\RequestStack;
 use Twig\Extension\AbstractExtension;
 use Twig\TwigFilter;

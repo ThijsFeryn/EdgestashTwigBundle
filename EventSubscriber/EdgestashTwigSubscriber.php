@@ -1,9 +1,7 @@
 <?php
-namespace ThijsFeryn\EdgestashTwigBundle\EventSubscriber;
-use Symfony\Component\EventDispatcher\Event;
+namespace ThijsFeryn\Bundle\EdgestashTwigBundle\EventSubscriber;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use Symfony\Component\HttpKernel\Event\FilterResponseEvent;
-use Symfony\Component\HttpKernel\Event\GetResponseEvent;
+use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
 class EdgestashTwigSubscriber implements EventSubscriberInterface
@@ -19,7 +17,7 @@ class EdgestashTwigSubscriber implements EventSubscriberInterface
             ],
         ];
     }
-    public function request(GetResponseEvent $event)
+    public function request(ResponseEvent $event)
     {
         $request = $event->getRequest();
         if ($request->headers->has('Surrogate-Capability') &&
@@ -34,7 +32,7 @@ class EdgestashTwigSubscriber implements EventSubscriberInterface
         }
     }
 
-    public function response(FilterResponseEvent $event)
+    public function response(ResponseEvent $event)
     {
         $request = $event->getRequest();
         $response = $event->getResponse();

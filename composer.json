@@ -12,10 +12,11 @@
   ],
   "require": {
     "php": "^7.2",
-    "symfony/twig-bundle": "4.*"
+    "symfony/twig-bundle": "4.*",
+    "symfony/dependency-injection": "4.*"
   },
   "autoload": {
-    "psr-4": { "ThijsFeryn\\EdgestashTwigBundle\\": "" }
+    "psr-4": { "ThijsFeryn\\Bundle\\EdgestashTwigBundle\\": "" }
   },
   "minimum-stability": "stable"
 }
