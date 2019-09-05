@@ -2,6 +2,9 @@ vcl 4.0;
 import edgestash;
 import std;
 
+//This is a standard VCL file that is not tailored to the needs of your application.
+//You will probably need to change some of it to make it work for your application
+
 backend default
 {
     .host = "origin"; //Replace with the hostname of your origin server
