@@ -1,6 +1,6 @@
-# EdgestashTwig bundle
+# ThijsFerynEdgestashTwigBundle
 
-The *EdgestashTwig* bundle is a Symfony bundle that adds *Edgestash* support to Twig.
+The *ThijsFerynEdgestashTwigBundle* is a Symfony bundle that adds *Edgestash* support to Twig.
 
 [Edgestash](https://docs.varnish-software.com/varnish-cache-plus/vmods/edgestash/) is a [Varnish Enterprise](https://www.varnish-software.com/solutions/varnish-enterprise/) module that processes [Mustache templates](https://mustache.github.io/) on the edge.
 
@@ -130,7 +130,7 @@ Here's an example:
 <div>{{ items_in_cart | edgestash('items_in_cart','/cart') }}</div>
 ```
 
-## How does the `EdgestashTwig` bundle interact with Varnish?
+## How does the `ThijsFerynEdgestashTwigBundle` interact with Varnish?
 
 As previously mentioned, the `edgestash` filter works in a non-obtrusive way. This means it can detect whether or not it sits behind an Edgestash-supported Varnish server.
 
@@ -142,7 +142,7 @@ In order to announce Edgestash support, Varnish will send the following request 
 
 This Symfony bundle looks for this header and if it finds it, Edgestash is supported.
 
-On the way back, Varnish needs to know when it should consider the output to be a Mustache template. The `EdgestashTwig` bundle does this by sending the following response header back to Varnish:
+On the way back, Varnish needs to know when it should consider the output to be a Mustache template. The `ThijsFerynEdgestashTwigBundle` bundle does this by sending the following response header back to Varnish:
 
 `Surrogate-Control: edgestash="EDGESTASH/2.1"`
 
@@ -178,4 +178,4 @@ When Edgestash output is detected by Varnish and the `Link` header is parsed, Va
 
 If you do not have a *Varnish Enterprise* license, you can also try out Varnish Enterprise and Edgestash using one of our [Cloud images](https://www.varnish-software.com/products/varnish-cloud/) on AWS, Azure or Google Cloud.
 
-De minimal VCL required to use the `EdgestashTwig` bundle is stored in [Resources/Config/default.vcl](/Resources/Config/default.vcl)
+De minimal VCL required to use the `ThijsFerynEdgestashTwigBundle` is stored in [Resources/Config/default.vcl](/Resources/Config/default.vcl)
