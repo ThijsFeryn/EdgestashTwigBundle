@@ -1,6 +1,7 @@
 <?php
 namespace ThijsFeryn\Bundle\EdgestashTwigBundle\EventSubscriber;
 use Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use Symfony\Component\HttpKernel\Event\RequestEvent;
 use Symfony\Component\HttpKernel\Event\ResponseEvent;
 use Symfony\Component\HttpKernel\KernelEvents;
 
@@ -17,7 +18,7 @@ class EdgestashTwigSubscriber implements EventSubscriberInterface
             ],
         ];
     }
-    public function request(ResponseEvent $event)
+    public function request(RequestEvent $event)
     {
         $request = $event->getRequest();
         if ($request->headers->has('Surrogate-Capability') &&

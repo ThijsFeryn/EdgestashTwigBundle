@@ -1,4 +1,7 @@
 services:
-    ThijsFeryn\EdgestashTwigBundle\TwigExtension:
+    ThijsFeryn\Bundle\EdgestashTwigBundle\TwigExtension:
         arguments:
-            - '@RequestStack'
+            - '@request_stack'
+        tags: ['twig.extension']
+    ThijsFeryn\Bundle\EdgestashTwigBundle\EventSubscriber\EdgestashTwigSubscriber:
+        tags: ['kernel.event_subscriber']
