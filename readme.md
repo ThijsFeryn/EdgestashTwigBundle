@@ -178,4 +178,4 @@ When Edgestash output is detected by Varnish and the `Link` header is parsed, Va
 
 If you do not have a *Varnish Enterprise* license, you can also try out Varnish Enterprise and Edgestash using one of our [Cloud images](https://www.varnish-software.com/products/varnish-cloud/) on AWS, Azure or Google Cloud.
 
-De minimal VCL required to use the `ThijsFerynEdgestashTwigBundle` is stored in [Resources/Config/default.vcl](/Resources/Config/default.vcl)
+The minimal VCL required to use the `ThijsFerynEdgestashTwigBundle` is stored in [Resources/Config/default.vcl](/Resources/Config/default.vcl)
