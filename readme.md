@@ -8,6 +8,13 @@ Edgestash allows for JSON data to be composed into a response using Mustache syn
 
 This bundle offers a couple of custom Twig functions and filters that facilitate the use of Edgestash in an unobtrusive way, allowing you to efficiently cache personalized data.
 
+## Installing `ThijsFerynEdgestashTwigBundle`
+`ThijsFerynEdgestashTwigBundle` is available on [Packagist](https://packagist.org/packages/thijsferyn/edgestash-twig-bundle) and can be installed using Composer with the following command:
+
+```
+composer require thijsferyn/edgestash-twig-bundle
+```
+
 ## How does Edgestash work?
 
 [The VCL example on the Edgestash documentation page](https://docs.varnish-software.com/varnish-cache-plus/vmods/edgestash/#vcl-example) shows how the Mustache template and the JSON data are cached separately.
